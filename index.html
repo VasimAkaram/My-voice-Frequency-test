@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Frequency Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="card">
+            <h1>Voice Frequency Detector</h1>
+            <div id="status" class="status-text">Press Start to analyze your voice frequency</div>
+            <div class="frequency-display">
+                <p>Current Frequency: <span id="frequency">0</span> Hz</p>
+                <p>Max Frequency: <span id="max-frequency">0</span> Hz</p>
+            </div>
+            <div class="button-container">
+                <button id="start-btn" class="btn start-btn">Start</button>
+                <button id="stop-btn" class="btn stop-btn" disabled>Stop</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

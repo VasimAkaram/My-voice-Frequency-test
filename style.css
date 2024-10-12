@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f095ea, #24dbb6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    background-color: #b3eca2;
+    color: #333;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    max-width: 90%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #0072ff;
+    font-size: 1.8rem;
+}
+
+.status-text {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.frequency-display {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.frequency-display p {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.start-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.stop-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn:disabled {
+    background-color: #ccc;
+}
+
+.btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    background-color: #218838;
+}
+
+.stop-btn:hover:not(:disabled) {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
